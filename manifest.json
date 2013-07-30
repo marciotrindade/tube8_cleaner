@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "name": "Tube8 Cleaner",
+  "description": "Remove adds from tube8.com",
+  "icons": {
+    "48": "icon_48.png",
+    "128": "icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.tube8.com/*"],
+      "js": ["jquery.js", "tube8_cleaner.js"]
+    }
+  ]
+}
